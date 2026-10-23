@@ -63,4 +63,31 @@
   --font-headline: 'Space Grotesk', ui-sans-serif, sans-serif;
   --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Data viz (AppKit chart variables): validated categorical order, never status colours — see
+     references/token-contract.md §7. Fixed order: assign slots in order, never cycle. */
+  --chart-cat-1: #4963de;
+  --chart-cat-2: #915006;
+  --chart-cat-3: #149fbf;
+  --chart-cat-4: #687c02;
+  --chart-cat-5: #9347c2;
+  --chart-cat-6: #ec515d;
+  --chart-cat-7: #9174f9;
+  --chart-cat-8: #ab1d72;
+  --chart-seq-1: #e9eefc;
+  --chart-seq-2: #c9d7fd;
+  --chart-seq-3: #a8bcf6;
+  --chart-seq-4: #859deb;
+  --chart-seq-5: #647fde;
+  --chart-seq-6: #4962c7;
+  --chart-seq-7: #374a9b;
+  --chart-seq-8: #283774;
+  --chart-div-1: #2f429d;
+  --chart-div-2: #576ec0;
+  --chart-div-3: #869bdd;
+  --chart-div-4: #c4d0f3;
+  --chart-div-5: #ecc9b2;
+  --chart-div-6: #cf8d60;
+  --chart-div-7: #ad5c15;
+  --chart-div-8: #753b07;
 }
