@@ -1,0 +1,42 @@
+[
+  {
+    "id": "executive-telemetry",
+    "label": "Executive Telemetry",
+    "mode": "light",
+    "fonts": ["Space Grotesk", "Hanken Grotesk", "JetBrains Mono"],
+    "tokens": "themes/executive-telemetry.css",
+    "concept": "references/concepts/executive-telemetry-voc.md"
+  },
+  {
+    "id": "midnight-telemetry",
+    "label": "Midnight Telemetry",
+    "mode": "dark",
+    "fonts": ["Space Grotesk", "Hanken Grotesk", "JetBrains Mono"],
+    "tokens": "themes/midnight-telemetry.css",
+    "concept": "references/concepts/midnight-telemetry.md"
+  },
+  {
+    "id": "executive-ledger",
+    "label": "Executive Ledger",
+    "mode": "light",
+    "fonts": ["Plus Jakarta Sans", "JetBrains Mono"],
+    "tokens": "themes/executive-ledger.css",
+    "concept": "references/concepts/executive-ledger-audit-system.md"
+  },
+  {
+    "id": "terracotta-ink",
+    "label": "Terracotta & Ink",
+    "mode": "light",
+    "fonts": ["Space Grotesk", "Plus Jakarta Sans", "JetBrains Mono"],
+    "tokens": "themes/terracotta-ink.css",
+    "concept": "references/concepts/terracotta-ink-analytics.md"
+  },
+  {
+    "id": "telemetry-studio",
+    "label": "Telemetry Studio",
+    "mode": "light",
+    "fonts": ["Hanken Grotesk", "Geist Mono"],
+    "tokens": "themes/telemetry-studio.css",
+    "concept": "references/concepts/telemetry-studio.md"
+  }
+]

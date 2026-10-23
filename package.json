@@ -1,0 +1,12 @@
+{
+  "name": "@kevin-ippen/appkit-design-library",
+  "version": "0.1.0",
+  "description": "System-level, app-agnostic design system: tokenized themes, registry, and references for data + AI apps (AppKit, React, Tailwind).",
+  "type": "module",
+  "files": ["themes", "registry", "react", "references", "skills"],
+  "exports": {
+    "./themes/*": "./themes/*",
+    "./registry/themes.json": "./registry/themes.json",
+    "./react/theme-init.js": "./react/theme-init.js"
+  }
+}

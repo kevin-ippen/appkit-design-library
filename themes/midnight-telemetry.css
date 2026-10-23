@@ -1,0 +1,65 @@
+/* Midnight Telemetry (dark) — deep space surface + sky accents.
+   Token contract: references/token-contract.md */
+:root[data-theme='midnight-telemetry'] {
+  --background: #0f131c;
+  --foreground: #dfe2ef;
+  --card: #181b25;
+  --card-foreground: #dfe2ef;
+  --popover: #1c1f29;
+  --popover-foreground: #dfe2ef;
+  --muted: #1c1f29;
+  --muted-foreground: #bdc8d1;
+  --border: #31353f;
+  --input: #3e484f;
+
+  --primary: #8ed5ff;
+  --primary-foreground: #00354a;
+  --secondary: #262a34;
+  --secondary-foreground: #dfe2ef;
+  --accent: #262a34;
+  --accent-foreground: #8ed5ff;
+  --destructive: #ff929a;
+  --destructive-foreground: #67001b;
+  --success: #4ade80;
+  --success-foreground: #052e12;
+  --warning: #ffb86b;
+  --warning-foreground: #3d2200;
+  --ring: #8ed5ff;
+  --chart-1: #8ed5ff;
+  --chart-2: #b4c5ff;
+  --chart-3: #ff929a;
+  --chart-4: #4ade80;
+  --chart-5: #87929a;
+
+  --brand-navy: #dfe2ef;
+  --brand-crimson: #ff929a;
+  --brand-blue: #8ed5ff;
+  --brand-cyan: #38bdf8;
+  --brand-gold: #ffd08a;
+
+  --sev-critical: #ff929a;
+  --sev-high: #ffb86b;
+  --sev-watch: #ffd08a;
+  --sev-ok: #4ade80;
+  --sev-info: #8ed5ff;
+  --sev-neutral: #87929a;
+
+  --sidebar: #0a0e17;
+  --sidebar-foreground: #dfe2ef;
+  --sidebar-muted: #87929a;
+  --sidebar-primary: #8ed5ff;
+  --sidebar-primary-foreground: #0f131c;
+  --sidebar-border: #1c1f29;
+  --sidebar-hover: rgba(223, 226, 239, 0.06);
+
+  --map-land: #262a34;
+  --map-land-stroke: #0f131c;
+  --map-coastline: #3e484f;
+
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --alert-shadow: 0 4px 12px rgba(255, 146, 154, 0.08);
+
+  --font-headline: 'Space Grotesk', 'Hanken Grotesk', ui-sans-serif, sans-serif;
+  --font-body: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}

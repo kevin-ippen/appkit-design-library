@@ -1,0 +1,66 @@
+/* Terracotta & Ink Analytics (light) — warm paper, terracotta authority,
+   slate-blue analytics. Token contract: references/token-contract.md */
+:root[data-theme='terracotta-ink'] {
+  --background: #fbf9f6;
+  --foreground: #1b1c1a;
+  --card: #ffffff;
+  --card-foreground: #1b1c1a;
+  --popover: #ffffff;
+  --popover-foreground: #1b1c1a;
+  --muted: #f5f3f0;
+  --muted-foreground: #89726d;
+  --border: #eae8e5;
+  --input: #dcc0ba;
+  --radius: 0.375rem;
+
+  --primary: #953c27;
+  --primary-foreground: #ffffff;
+  --secondary: #d7dffa;
+  --secondary-foreground: #131b2f;
+  --accent: #ffe9e2;
+  --accent-foreground: #953c27;
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+  --success: #16a34a;
+  --success-foreground: #ffffff;
+  --warning: #d97706;
+  --warning-foreground: #ffffff;
+  --ring: #953c27;
+  --chart-1: #953c27;
+  --chart-2: #565e75;
+  --chart-3: #ba1a1a;
+  --chart-4: #7d4d03;
+  --chart-5: #89726d;
+
+  --brand-navy: #131b2f;
+  --brand-crimson: #953c27;
+  --brand-blue: #565e75;
+  --brand-cyan: #7d4d03;
+  --brand-gold: #9a651e;
+
+  --sev-critical: #ba1a1a;
+  --sev-high: #d97706;
+  --sev-watch: #c98a00;
+  --sev-ok: #16a34a;
+  --sev-info: #565e75;
+  --sev-neutral: #8a8f98;
+
+  --sidebar: #131b2f;
+  --sidebar-foreground: #f2f0ed;
+  --sidebar-muted: #8d96ac;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #131b2f;
+  --sidebar-border: #2a3450;
+  --sidebar-hover: rgba(242, 240, 237, 0.08);
+
+  --map-land: #f5f3f0;
+  --map-land-stroke: #ffffff;
+  --map-coastline: #e0d8d4;
+
+  --card-shadow: 0 1px 3px rgba(27, 28, 26, 0.05), 0 4px 8px -2px rgba(27, 28, 26, 0.07);
+  --alert-shadow: 0 4px 12px rgba(149, 60, 39, 0.1);
+
+  --font-headline: 'Space Grotesk', ui-sans-serif, sans-serif;
+  --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
