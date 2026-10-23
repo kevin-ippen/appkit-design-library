@@ -20,6 +20,15 @@ h1, h2, h3, h4, .font-headline {
   letter-spacing: -0.01em;
 }
 
+/* Chart chrome: AppKit's chart variables follow the active theme's surfaces (the palettes are set per theme, §7).
+   :root[data-theme] outranks AppKit's own :root / .dark values, so a dark theme never gets the light chart chrome. */
+:root[data-theme] {
+  --chart-grid: var(--border);
+  --chart-axis-label: var(--muted-foreground);
+  --chart-axis-title: var(--foreground);
+  --chart-tooltip-bg: var(--popover);
+}
+
 /* ─── Executive sidebar / rail ─────────────────────────────────────────── */
 .app-sidebar {
   background: var(--sidebar);
