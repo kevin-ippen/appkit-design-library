@@ -89,14 +89,4 @@
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* Elevation / series / severity texture */
-  --surface-1: #0a0e17
-  |--surface-2: #12151d
-  |--surface-3: #1c2230
-  |--series-1: #38bdf8
-  |--series-2: #ff929a
-  |--series-3: #fbbf24
-  |--series-4: #34d399
-  |--series-5: #a78bfa
-  |--series-6: #22d3ee
-  |--sev-bar-w: 3px
-}
+  --surface-1: #0a0e17;  --surface-2: #12151d;  --surface-3: #1c2230;  --series-1: #38bdf8;  --series-2: #ff929a;  --series-3: #fbbf24;  --series-4: #34d399;  --series-5: #a78bfa;  --series-6: #22d3ee;  --sev-bar-w: 3px;}
