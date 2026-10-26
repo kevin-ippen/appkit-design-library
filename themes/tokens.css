@@ -90,3 +90,36 @@ h1, h2, h3, h4, .font-headline {
   font-weight: 600;
   border-bottom-color: var(--primary);
 }
+
+/* ─── Signature surfaces (token contract §7) ────────────────────────────
+   Loads after appkit-ui styles, so these win by cascade order. */
+[data-slot='card'] {
+  border: var(--card-border-w, 1px) solid var(--card-border-c, var(--border));
+  border-radius: var(--radius-card, var(--radius));
+  box-shadow: var(--card-shadow, none);
+}
+[data-slot='button'] {
+  border-radius: var(--radius-control, var(--radius));
+}
+
+/* Left accent bar for highlight/critical cards (width 0 disables per theme). */
+.accent-bar {
+  border-left: var(--accent-bar-w, 0px) solid var(--accent-bar-c, transparent);
+}
+
+/* Perimeter highlight for selected/active surfaces. */
+.ring-active {
+  outline: 2px solid var(--active-ring-c, transparent);
+  outline-offset: -2px;
+}
+
+/* Honor reduced-motion: kill transitions/animations (rail expand, fades, map easing). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

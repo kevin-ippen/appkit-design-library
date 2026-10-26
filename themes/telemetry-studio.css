@@ -60,6 +60,20 @@
   --card-shadow: 0 1px 3px rgba(35, 25, 26, 0.05), 0 4px 8px -2px rgba(35, 25, 26, 0.07);
   --alert-shadow: 0 4px 12px rgba(186, 26, 26, 0.08);
 
+  /* Signature — hairline studio surfaces, teal active perimeter, mid-weight bars */
+  --radius-card: 0.5rem;
+  --radius-control: 0.375rem;
+  --card-border-w: 1px;
+  --card-border-c: #e8e5ef;
+  --card-shadow: 0 2px 6px -1px rgba(27, 17, 18, 0.03);
+  --accent-bar-w: 0px;
+  --accent-bar-c: var(--brand-crimson);
+  --active-ring-c: rgba(14, 107, 86, 0.35);
+  --chart-bar-h: 6px;
+  --chart-bar-gap: 5px;
+  --chart-grid-c: #e8e5ef;
+  --chart-area-opacity: 0.1;
+
   --font-headline: 'Hanken Grotesk', ui-sans-serif, sans-serif;
   --font-body: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;

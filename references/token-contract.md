@@ -50,6 +50,24 @@ Executive sidebar / collapsible rail surfaces.
 `--font-body`
 `--font-mono` (data figures, .tabular-nums)
 
+## 7. Signature flourishes (required)
+
+Geometry & texture — what makes a theme *itself* rather than a recolor.
+
+`--radius-card` card/container corner (ledger: 4px book-bound; studio: 8px; terracotta: 10px soft)
+`--radius-control` buttons/inputs corner
+`--card-border-w` + `--card-border-c` hairline outline (set width 0 for shadow-only surfaces)
+`--card-shadow` (section 5) — elevation strategy: outline vs double-stop shadow vs none
+`--accent-bar-w` + `--accent-bar-c` left accent bar on highlight/critical cards (0 = off)
+`--active-ring-c` perimeter highlight on selected/active surfaces (studio: tinted teal)
+`--chart-bar-h` bar/meter thickness (ledger: slender 4px; terracotta: tactile 10px)
+`--chart-bar-gap` spacing between bar rows
+`--chart-grid-c` gridline/zero-line color
+`--chart-area-opacity` area fill under line charts
+
+Theme authors: don't just recolor section 1 — change at least three of these so the
+theme reads differently at arm's length.
+
 ## Adding a theme
 
 1. Copy the closest existing `themes/*.css`, set all six sections above.
