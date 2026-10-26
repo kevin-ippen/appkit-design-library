@@ -136,6 +136,16 @@ h1, h2, h3, h4, .font-headline {
   border-radius: var(--radius-control, var(--radius));
 }
 
+/* Raised overlays sit on the top elevation tier (§12). */
+[data-slot='popover-content'],
+[data-slot='dropdown-menu-content'],
+[data-slot='select-content'],
+[data-slot='sheet-content'],
+[data-slot='dialog-content'],
+.raised {
+  background: var(--surface-3, var(--popover));
+}
+
 /* Motion contract — rail + link transitions ride the theme's timing. */
 .app-sidebar {
   transition: width var(--motion-base, 200ms) var(--motion-ease, ease-out);
