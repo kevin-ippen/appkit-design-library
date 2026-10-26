@@ -88,4 +88,16 @@
   --font-headline: 'Space Grotesk', 'Hanken Grotesk', ui-sans-serif, sans-serif;
   --font-body: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Elevation / series / severity texture */
+  --surface-1: #f8fafc;
+  --surface-2: #ffffff;
+  --surface-3: #ffffff;
+  --series-1: #2563eb;
+  --series-2: #e31837;
+  --series-3: #d97706;
+  --series-4: #16a34a;
+  --series-5: #7c3aed;
+  --series-6: #0891b2;
+  --sev-bar-w: 3px;
 }

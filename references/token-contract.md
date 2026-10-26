@@ -96,6 +96,30 @@ cool slate (telemetry), lilac (studio), deep navy (midnight).
 `--tracking-headline` h1–h4 letter-spacing (ledger: tight -0.03em; telemetry: -0.01em)
 `--tracking-eyebrow` uppercase micro-label letter-spacing (ledger: wide 0.08em)
 
+## 12. Elevation tiers (required)
+
+`--surface-1` page canvas (== --background)
+`--surface-2` resting cards (== --card)
+`--surface-3` raised overlays — popovers, menus, sheets, drawers
+
+Dark themes need three visibly distinct tiers (midnight: #0a0e17 / #12151d / #1c2230).
+Paper themes shift warmth, not lightness (ledger: cream / white / warm-white).
+
+## 13. Series palette (required)
+
+`--series-1` … `--series-6` categorical line/point colors in rotation order.
+
+Choose a *sequence*, not just a set: terracotta leads warm, ledger leads forest,
+midnight brightens every stop for dark-ground contrast. Multi-series charts
+(market trends, failure-mix trends) consume these in order — never hardcode hexes.
+
+## 14. Severity texture (recommended)
+
+`--sev-bar-w` severity accent-bar width on mention/evidence cards
+
+Fill vs line: telemetry reads severity as a 3px color bar; ledger reads it as a
+1px hairline (paper discipline); studio at 2px.
+
 ## Adding a theme
 
 1. Copy the closest existing `themes/*.css`, set all six sections above.
