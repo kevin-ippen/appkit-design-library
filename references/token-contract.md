@@ -68,6 +68,34 @@ Geometry & texture — what makes a theme *itself* rather than a recolor.
 Theme authors: don't just recolor section 1 — change at least three of these so the
 theme reads differently at arm's length.
 
+## 8. Chart semantics (required)
+
+`--chart-heat-c` heat/intensity ramp color (co-occurrence matrices)
+`--chart-risk-c` above-baseline risk ramp (heatmaps, relative risk)
+`--chart-cool-c` at/below-baseline ramp (quiet cells)
+
+Apply with `color-mix(in srgb, var(--chart-heat-c) N%, transparent)` — never bake
+rgba constants into components. Sentiment triple stays on §3 severity vars.
+
+## 9. Wells (recommended)
+
+`--well-c` inset panel background (chain grids, code blocks, economics panels)
+`--well-border-c` its hairline
+
+Sunken surfaces read differently per theme: warm paper (ledger, terracotta),
+cool slate (telemetry), lilac (studio), deep navy (midnight).
+
+## 10. Motion (recommended)
+
+`--motion-fast` hover/micro transitions (ledger: decisive 100ms; terracotta: 160ms)
+`--motion-base` panel/rail/drawer transitions (telemetry: 200ms; terracotta: 240ms)
+`--motion-ease` master easing curve
+
+## 11. Type spec (required)
+
+`--tracking-headline` h1–h4 letter-spacing (ledger: tight -0.03em; telemetry: -0.01em)
+`--tracking-eyebrow` uppercase micro-label letter-spacing (ledger: wide 0.08em)
+
 ## Adding a theme
 
 1. Copy the closest existing `themes/*.css`, set all six sections above.

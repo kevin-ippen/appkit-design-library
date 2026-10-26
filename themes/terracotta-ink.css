@@ -73,6 +73,18 @@
   --chart-grid-c: #eae8e5;
   --chart-area-opacity: 0.14;
 
+  /* Chart semantics / wells / motion / type — terracotta heat, warm well, gentle */
+  --chart-heat-c: #953c27;
+  --chart-risk-c: #ba1a1a;
+  --chart-cool-c: #89726d;
+  --well-c: #f5f3f0;
+  --well-border-c: #eae8e5;
+  --motion-fast: 160ms;
+  --motion-base: 240ms;
+  --motion-ease: ease-in-out;
+  --tracking-headline: -0.02em;
+  --tracking-eyebrow: 0.05em;
+
   --font-headline: 'Space Grotesk', ui-sans-serif, sans-serif;
   --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;

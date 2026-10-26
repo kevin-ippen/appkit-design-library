@@ -123,3 +123,24 @@ h1, h2, h3, h4, .font-headline {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ─── Epoch 2: type spec, motion, wells ───────────────────────────────── */
+h1, h2, h3, h4, .font-headline {
+  letter-spacing: var(--tracking-headline, -0.01em);
+}
+
+/* Sunken inset panels (chain grids, code blocks, economics panels). */
+.well {
+  background: var(--well-c, var(--muted));
+  border: 1px solid var(--well-border-c, var(--border));
+  border-radius: var(--radius-control, var(--radius));
+}
+
+/* Motion contract — rail + link transitions ride the theme's timing. */
+.app-sidebar {
+  transition: width var(--motion-base, 200ms) var(--motion-ease, ease-out);
+}
+.side-link {
+  transition: background-color var(--motion-fast, 120ms) var(--motion-ease, ease-out),
+    color var(--motion-fast, 120ms) var(--motion-ease, ease-out);
+}

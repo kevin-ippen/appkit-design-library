@@ -72,6 +72,18 @@
   --chart-grid-c: #262b36;
   --chart-area-opacity: 0.2;
 
+  /* Chart semantics / wells / motion / type */
+  --chart-heat-c: #38bdf8;
+  --chart-risk-c: #ff929a;
+  --chart-cool-c: #7587a5;
+  --well-c: #12151d;
+  --well-border-c: #262b36;
+  --motion-fast: 100ms;
+  --motion-base: 180ms;
+  --motion-ease: ease-out;
+  --tracking-headline: -0.01em;
+  --tracking-eyebrow: 0.05em;
+
   --font-headline: 'Space Grotesk', 'Hanken Grotesk', ui-sans-serif, sans-serif;
   --font-body: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;

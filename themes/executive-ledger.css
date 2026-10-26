@@ -75,6 +75,19 @@
   --chart-grid-c: #e2ddd2;
   --chart-area-opacity: 0.08;
 
+  /* Chart semantics / wells / motion / type — hunter heat, warm well,
+     decisive motion, tight headlines, wide eyebrows */
+  --chart-heat-c: #133e2c;
+  --chart-risk-c: #ba1a1a;
+  --chart-cool-c: #6b705f;
+  --well-c: #f4f1ea;
+  --well-border-c: #e2ddd2;
+  --motion-fast: 100ms;
+  --motion-base: 150ms;
+  --motion-ease: ease-in-out;
+  --tracking-headline: -0.03em;
+  --tracking-eyebrow: 0.08em;
+
   --font-headline: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
