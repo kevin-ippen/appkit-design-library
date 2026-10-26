@@ -99,4 +99,14 @@
   --series-5: #a78bfa;
   --series-6: #22d3ee;
   --sev-bar-w: 3px;
+
+  /* Elevation shadows / table treatment */
+  --shadow-1: var(--card-shadow);
+  --shadow-2: 0 8px 24px -4px rgba(0, 0, 0, 0.5);
+  --shadow-3: 0 16px 48px -8px rgba(0, 0, 0, 0.65);
+  --table-row-border-c: #262b36;
+  --table-zebra-c: #12151d;
+  --table-header-c: #7587a5;
+  --table-header-ls: 0.05em;
+  --table-header-transform: uppercase;
 }

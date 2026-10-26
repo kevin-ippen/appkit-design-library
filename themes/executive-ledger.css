@@ -103,4 +103,14 @@
   --series-5: #565e75;
   --series-6: #0f766e;
   --sev-bar-w: 1px;
+
+  /* Elevation shadows / table treatment */
+  --shadow-1: none;
+  --shadow-2: 0 8px 24px -4px rgba(18, 43, 38, 0.08);
+  --shadow-3: 0 16px 48px -8px rgba(18, 43, 38, 0.12);
+  --table-row-border-c: #e2ddd2;
+  --table-zebra-c: transparent;
+  --table-header-c: #6b705f;
+  --table-header-ls: 0.08em;
+  --table-header-transform: uppercase;
 }

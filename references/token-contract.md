@@ -120,6 +120,26 @@ midnight brightens every stop for dark-ground contrast. Multi-series charts
 Fill vs line: telemetry reads severity as a 3px color bar; ledger reads it as a
 1px hairline (paper discipline); studio at 2px.
 
+## 15. Elevation shadows (required)
+
+`--shadow-1` resting-card shadow (== --card-shadow)
+`--shadow-2` raised overlays (popovers, menus, sheets)
+`--shadow-3` modal/dialog prominence
+
+Outline-first themes set all three to `none` or near-none warm tints (ledger);
+shadow themes scale depth with tier. `--card-shadow` stays as the §5 alias of `--shadow-1`.
+
+## 16. Table treatment (recommended)
+
+`--table-row-border-c` row rule color
+`--table-zebra-c` even-row wash (`transparent` to disable)
+`--table-header-c` header text color
+`--table-header-ls` header letter-spacing
+`--table-header-transform` `uppercase` | `none`
+
+Ledger is ruled-only (no zebra — book lines). Terracotta and studio wash zebra
+over hairlines. Dark themes zebra with a faint cool tint, never pure black.
+
 ## Adding a theme
 
 1. Copy the closest existing `themes/*.css`, set all six sections above.

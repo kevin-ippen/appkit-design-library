@@ -144,6 +144,27 @@ h1, h2, h3, h4, .font-headline {
 [data-slot='dialog-content'],
 .raised {
   background: var(--surface-3, var(--popover));
+  box-shadow: var(--shadow-2, none);
+}
+
+[data-slot='dialog-content'] {
+  box-shadow: var(--shadow-3, var(--shadow-2, none));
+}
+
+/* Table treatment (§16): ruled vs zebra, themed headers. */
+table thead {
+  color: var(--table-header-c, var(--muted-foreground));
+  letter-spacing: var(--table-header-ls, normal);
+  text-transform: var(--table-header-transform, none);
+}
+table tbody tr {
+  border-bottom: 1px solid var(--table-row-border-c, var(--border));
+}
+table tbody tr:last-child {
+  border-bottom: none;
+}
+table tbody tr:nth-child(even) {
+  background: var(--table-zebra-c, transparent);
 }
 
 /* Motion contract — rail + link transitions ride the theme's timing. */

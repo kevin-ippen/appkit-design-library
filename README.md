@@ -7,6 +7,9 @@ custom properties.
 
 ## What's here
 
+- `gallery.html` — open it in a browser: the full theme vocabulary (buttons,
+  cards, tables, bars, heat ramps, wells, severity texture, overlays) with a
+  switcher for all five themes (`?theme=<id>` deep-links).
 - `themes/` — token maps per theme (`executive-telemetry`, `midnight-telemetry`,
   `executive-ledger`, `terracotta-ink`, `telemetry-studio`) plus `tokens.css`,
   the shared application layer (typography, sidebar/rail, top-nav, rail CTA).
