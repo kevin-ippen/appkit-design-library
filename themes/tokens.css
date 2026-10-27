@@ -176,3 +176,9 @@ table tbody tr:nth-child(even) {
   transition: background-color var(--motion-fast, 120ms) var(--motion-ease, ease-out),
     color var(--motion-fast, 120ms) var(--motion-ease, ease-out);
 }
+
+/* AppKit skeleton renders on bg-accent — force the theme's neutral well instead,
+   so loading states never read as blue tint (esp. editorial-paper's blue --accent). */
+[data-slot='skeleton'] {
+  background-color: var(--well-c, var(--muted)) !important;
+}
