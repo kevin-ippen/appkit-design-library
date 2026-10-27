@@ -1,0 +1,146 @@
+/* Editorial Paper (light) — warm paper canvas, ink type, narrative serif, warm heat ramp.
+   Source: VOC Redesign — Stores mockup (Geist UI + Newsreader narrative).
+   Token contract: references/token-contract.md */
+:root[data-theme='editorial-paper'] {
+  --background: #faf9f5;
+  --foreground: #101826;
+  --card: #ffffff;
+  --card-foreground: #101826;
+  --popover: #ffffff;
+  --popover-foreground: #101826;
+  --muted: #f4f5f7;
+  --muted-foreground: #6b7586;
+  --border: #e3e6eb;
+  --input: #d5dae2;
+  --radius: 0.5rem;
+
+  --primary: #101826;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f2f5;
+  --secondary-foreground: #101826;
+  --accent: #e5ecf8;
+  --accent-foreground: #2e5aac;
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --success: #2f8f6b;
+  --success-foreground: #ffffff;
+  --warning: #f08c2e;
+  --warning-foreground: #ffffff;
+  --ring: #101826;
+  --chart-1: #4b6584;
+  --chart-2: #b42318;
+  --chart-3: #2f8f6b;
+  --chart-4: #f08c2e;
+  --chart-5: #6b7586;
+
+  --brand-navy: #101826;
+  --brand-crimson: #b42318;
+  --brand-blue: #2e5aac;
+  --brand-cyan: #4b6584;
+  --brand-gold: #e3c891;
+
+  --sev-critical: #b42318;
+  --sev-high: #e0703f;
+  --sev-watch: #f08c2e;
+  --sev-ok: #2f8f6b;
+  --sev-info: #2e5aac;
+  --sev-neutral: #a9b4c4;
+
+  --sidebar: #101826;
+  --sidebar-foreground: #eef0f3;
+  --sidebar-muted: #6b7586;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #101826;
+  --sidebar-border: #2a3445;
+  --sidebar-hover: rgba(238, 240, 243, 0.08);
+
+  --map-land: #eef0f3;
+  --map-land-stroke: #ffffff;
+  --map-coastline: #d5dae2;
+
+  --card-shadow: 0 1px 2px rgba(16, 24, 38, 0.04), 0 4px 10px -2px rgba(16, 24, 38, 0.05);
+  --alert-shadow: 0 4px 12px rgba(180, 35, 24, 0.08);
+
+  /* Signature — quiet editorial cards, no accent bar; heat speaks via chips */
+  --radius-card: 0.75rem;
+  --radius-control: 0.5rem;
+  --card-border-w: 1px;
+  --card-border-c: #e3e6eb;
+  --accent-bar-w: 0px;
+  --accent-bar-c: var(--brand-crimson);
+  --active-ring-c: rgba(46, 90, 172, 0.35);
+  --chart-bar-h: 6px;
+  --chart-bar-gap: 6px;
+  --chart-grid-c: #e3e6eb;
+  --chart-area-opacity: 0.08;
+
+  /* Chart semantics / wells / motion / type */
+  --chart-heat-c: #b93d16;
+  --chart-risk-c: #b42318;
+  --chart-cool-c: #4b6584;
+  --well-c: #f4f5f7;
+  --well-border-c: #e3e6eb;
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-ease: ease-out;
+  --tracking-headline: -0.02em;
+  --tracking-eyebrow: 0.06em;
+
+  --font-headline: 'Geist', 'Hanken Grotesk', ui-sans-serif, sans-serif;
+  --font-body: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
+  --font-serif: 'Newsreader', Georgia, serif;
+
+  /* Elevation / series / severity texture */
+  --surface-1: #faf9f5;
+  --surface-2: #ffffff;
+  --surface-3: #ffffff;
+  --series-1: #4b6584;
+  --series-2: #b42318;
+  --series-3: #f08c2e;
+  --series-4: #2f8f6b;
+  --series-5: #2e5aac;
+  --series-6: #6b7586;
+  --sev-bar-w: 0px;
+
+  /* Elevation shadows / table treatment */
+  --shadow-1: var(--card-shadow);
+  --shadow-2: 0 8px 24px -6px rgba(16, 24, 38, 0.1), 0 2px 6px -1px rgba(16, 24, 38, 0.05);
+  --shadow-3: 0 16px 48px -8px rgba(16, 24, 38, 0.18);
+  --table-row-border-c: #e3e6eb;
+  --table-zebra-c: transparent;
+  --table-header-c: #6b7586;
+  --table-header-ls: 0.06em;
+  --table-header-transform: uppercase;
+
+  /* Heat chips (severity / defection cells) — warm ramp, ink text on light steps */
+  --heat-1: #fdefe6;
+  --heat-2: #f9d3bc;
+  --heat-3: #f2a47c;
+  --heat-4: #e0703f;
+  --heat-5: #b93d16;
+  --heat-fg-light: #3a1a08;
+  --heat-fg-dark: #ffffff;
+
+  /* Regime chips (voice × economics quadrant) */
+  --regime-troubled: #b42318;
+  --regime-troubled-bg: #fce8e6;
+  --regime-troubled-fg: #8f1d15;
+  --regime-fragile: #f08c2e;
+  --regime-fragile-bg: #fdebd8;
+  --regime-fragile-fg: #7a3300;
+  --regime-healthy: #2f8f6b;
+  --regime-healthy-bg: #e3f2ec;
+  --regime-healthy-fg: #155240;
+  --regime-latent: #2e5aac;
+  --regime-latent-bg: #e5ecf8;
+  --regime-latent-fg: #1d3f80;
+
+  /* Revenue verification flags */
+  --flag-gold: #e3c891;
+  --flag-gold-fg: #6b5a1e;
+
+  /* Narrative evidence highlight (quote key-phrase marker) */
+  --mark-bg: #f9d3bc;
+  --mark-fg: #3a1a08;
+}

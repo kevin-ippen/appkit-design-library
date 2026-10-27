@@ -1,5 +1,13 @@
 [
   {
+    "id": "editorial-paper",
+    "label": "Editorial Paper",
+    "mode": "light",
+    "fonts": ["Geist", "Geist Mono", "Newsreader"],
+    "tokens": "themes/editorial-paper.css",
+    "concept": "references/concepts/editorial-paper-voc.md"
+  },
+  {
     "id": "executive-telemetry",
     "label": "Executive Telemetry",
     "mode": "light",

@@ -140,6 +140,18 @@ shadow themes scale depth with tier. `--card-shadow` stays as the §5 alias of `
 Ledger is ruled-only (no zebra — book lines). Terracotta and studio wash zebra
 over hairlines. Dark themes zebra with a faint cool tint, never pure black.
 
+## 17. Editorial layer (optional, introduced by editorial-paper)
+
+`--font-serif` narrative serif for findings and evidence quotes (falls back to
+`--font-headline` when unset)
+`--heat-1..5` + `--heat-fg-light` / `--heat-fg-dark` warm ramp for severity /
+defection chips; steps 1–2 take the light fg, 3 may go either way, 4–5 take white
+`--regime-{troubled|fragile|healthy|latent}` + `-bg` / `-fg` quadrant chips for
+voice × economics segmentation
+`--flag-gold` + `--flag-gold-fg` revenue-verification flags (shared merchant,
+market median, unverified)
+`--mark-bg` / `--mark-fg` key-phrase highlight inside narrative quotes
+
 ## Adding a theme
 
 1. Copy the closest existing `themes/*.css`, set all six sections above.

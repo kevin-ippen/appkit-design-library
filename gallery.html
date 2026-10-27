@@ -4,7 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>appkit-design-library — theme gallery</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" />
+<link rel="stylesheet" href="themes/editorial-paper.css" />
 <link rel="stylesheet" href="themes/executive-telemetry.css" />
 <link rel="stylesheet" href="themes/midnight-telemetry.css" />
 <link rel="stylesheet" href="themes/executive-ledger.css" />
@@ -116,7 +117,7 @@ section>h2{font-size:12px;text-transform:var(--table-header-transform,uppercase)
   </section>
 </div>
 <script>
-const THEMES=[['executive-telemetry','Executive Telemetry'],['midnight-telemetry','Midnight Telemetry'],['executive-ledger','Executive Ledger'],['terracotta-ink','Terracotta & Ink'],['telemetry-studio','Telemetry Studio']];
+const THEMES=[['editorial-paper','Editorial Paper'],['executive-telemetry','Executive Telemetry'],['midnight-telemetry','Midnight Telemetry'],['executive-ledger','Executive Ledger'],['terracotta-ink','Terracotta & Ink'],['telemetry-studio','Telemetry Studio']];
 const root=document.documentElement,bar=document.getElementById('themes');
 function select(id,push=true){root.setAttribute('data-theme',id);if(push){history.replaceState(null,'','?theme='+id);try{localStorage.setItem('appkit-theme',id)}catch{}}for(const b of bar.children)b.setAttribute('aria-pressed',String(b.dataset.id===id));draw()}
 for(const[id,label]of THEMES){const b=document.createElement('button');b.textContent=label;b.dataset.id=id;b.onclick=()=>select(id);bar.appendChild(b)}
@@ -129,7 +130,7 @@ function draw(){
   for(let i=0;i<16;i++){const s=document.createElement('span');s.style.background=`color-mix(in srgb, var(--chart-heat-c) ${4+i*6}%, transparent)`;heat.appendChild(s)}
   document.getElementById('series').innerHTML=[1,2,3,4,5,6].map(i=>`<span class="g-swatch" style="background:var(--series-${i})" title="--series-${i}"></span>`).join('');
 }
-const initial=new URLSearchParams(location.search).get('theme')||(()=>{try{return localStorage.getItem('appkit-theme')}catch{return null}})()||'executive-telemetry';
+const initial=new URLSearchParams(location.search).get('theme')||(()=>{try{return localStorage.getItem('appkit-theme')}catch{return null}})()||'editorial-paper';
 select(initial,false);
 </script>
 </body>
