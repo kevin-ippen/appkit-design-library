@@ -43,9 +43,10 @@ h1, h2, h3, h4, .font-headline {
   color: var(--sidebar-foreground);
 }
 .side-link-active {
-  background: var(--sidebar-primary);
-  color: var(--sidebar-primary-foreground);
+  background: var(--sidebar-hover);
+  color: var(--sidebar-foreground);
   font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--sidebar-foreground);
 }
 
 .rail-ask {
