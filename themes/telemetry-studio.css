@@ -111,4 +111,15 @@
   --table-header-c: #6b6572;
   --table-header-ls: 0.06em;
   --table-header-transform: uppercase;
+
+  /* §18 Conditional ramp — graduated tone for deltas, ratings and verdicts.
+     good/better/best intensify; bad/worse/worst intensify. */
+  --good: #b5dcd0;
+  --better: #0e6b56;
+  --best: #0a4a3e;
+  --best-fg: #ffffff;
+  --bad: #efc4a8;
+  --worse: #ba1a1a;
+  --worst: #7f1010;
+  --worst-fg: #ffffff;
 }

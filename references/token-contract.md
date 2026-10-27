@@ -158,3 +158,12 @@ market median, unverified)
 2. Register it in `registry/themes.json` (id, label, mode, fonts, tokens path, concept ref).
 3. Drop the source concept in `references/concepts/`.
 4. Contrast-check: body text on --background ≥ 4.5, sidebar-muted on --sidebar ≥ 3.
+
+## 18. Conditional ramp (recommended)
+
+`--good` / `--better` / `--best` (+ `--best-fg`) and `--bad` / `--worse` / `--worst`
+(+ `--worst-fg`) — graduated tone for deltas, ratings and verdicts. Use instead of
+ad-hoc red/green: `good` is a quiet background tint, `better` the standard positive,
+`best` the strongest positive (takes `--best-fg` text); `bad` the quiet warning tint,
+`worse` the standard negative, `worst` the strongest (takes `--worst-fg` text).
+Midnight inverts: intensity is luminance, so `best`/`worst` take dark text.

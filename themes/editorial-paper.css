@@ -143,4 +143,15 @@
   /* Narrative evidence highlight (quote key-phrase marker) */
   --mark-bg: #f9d3bc;
   --mark-fg: #3a1a08;
+
+  /* §18 Conditional ramp — graduated tone for deltas, ratings and verdicts.
+     good/better/best intensify; bad/worse/worst intensify. */
+  --good: #a9d4c0;
+  --better: #2f8f6b;
+  --best: #155240;
+  --best-fg: #ffffff;
+  --bad: #f4b28c;
+  --worse: #e0703f;
+  --worst: #8f1d15;
+  --worst-fg: #ffffff;
 }
