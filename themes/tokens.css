@@ -49,6 +49,14 @@ h1, h2, h3, h4, .font-headline {
   box-shadow: inset 2px 0 0 var(--sidebar-foreground);
 }
 
+/* Contents rail: red bar + bolder text, no filled tile. */
+.rail-contents .side-link-active {
+  background: transparent;
+  box-shadow: inset 2px 0 0 var(--brand-crimson, var(--sidebar-foreground));
+  color: var(--sidebar-foreground);
+  font-weight: 600;
+}
+
 .rail-ask {
   display: flex;
   align-items: center;
