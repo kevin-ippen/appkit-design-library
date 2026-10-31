@@ -167,3 +167,21 @@ ad-hoc red/green: `good` is a quiet background tint, `better` the standard posit
 `best` the strongest positive (takes `--best-fg` text); `bad` the quiet warning tint,
 `worse` the standard negative, `worst` the strongest (takes `--worst-fg` text).
 Midnight inverts: intensity is luminance, so `best`/`worst` take dark text.
+
+## 19. Epistemic and change-state tokens (recommended)
+
+For apps that show what is known and what is about to change (knowledge graphs, agent write-backs, review queues).
+`tokens.css` derives them from the severity ramp, `--brand-gold` and `--accent`; a theme may override any of them.
+
+| Token | Default | Meaning |
+|---|---|---|
+| `--band-known-c` | `--sev-ok` | ● known: system of record, or confirmed |
+| `--band-likely-c` | `--sev-info` | ◐ likely: firsthand, not yet confirmed |
+| `--band-possible-c` | `--sev-high` | ○ possible: secondhand or inferred |
+| `--band-contested-c` | `--sev-critical` | ⚠ contested: sources disagree |
+| `--intent-c` / `--intent-hatch` | `--brand-gold` | ◇ plans and intent; a hatch for intent rows. Never evidence |
+| `--pending-bg` / `--pending-fg` | `--accent` / `--accent-foreground` | a queued change not yet written |
+| `--settled-border-style` | `dashed` | rejected, reverted or undone items |
+
+Rules: a band color always travels with its glyph and label. Settled items are marked by their edge and status,
+never by lowering opacity: faded text at 60% falls to about 2.3:1 on light themes.
