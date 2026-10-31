@@ -190,3 +190,18 @@ table tbody tr:nth-child(even) {
 [data-slot='skeleton'] {
   background-color: var(--well-c, var(--muted)) !important;
 }
+
+/* Epistemic + change-state aliases (token contract §19). Derived from tokens every theme sets, so each theme gets
+   them for free and may override any of them. Pair every color with its glyph or label: never color alone. */
+:root {
+  --band-known-c: var(--sev-ok);          /* ● system of record / confirmed */
+  --band-likely-c: var(--sev-info);       /* ◐ firsthand, not yet confirmed */
+  --band-possible-c: var(--sev-high);     /* ○ secondhand or inferred */
+  --band-contested-c: var(--sev-critical);/* ⚠ sources disagree */
+  --intent-c: var(--brand-gold);          /* ◇ plans and intent: never evidence */
+  --intent-hatch: repeating-linear-gradient(135deg, transparent 0 8px,
+    color-mix(in srgb, var(--brand-gold) 22%, transparent) 8px 9px);
+  --pending-bg: var(--accent);            /* a queued change, not yet written */
+  --pending-fg: var(--accent-foreground);
+  --settled-border-style: dashed;         /* rejected / reverted / undone: an edge, never faded text */
+}
